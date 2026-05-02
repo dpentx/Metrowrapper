@@ -216,18 +216,37 @@ class MpvBridge:
         else:
             self._ipc = "/tmp/metrowrap.sock"
 
+    @staticmethod
+    def _find_ytdlp() -> str:
+        """yt-dlp'nin tam yolunu döner, bulamazsa boş string."""
+        import shutil
+        found = shutil.which("yt-dlp") or shutil.which("yt-dlp.exe")
+        if not found:
+            scripts = os.path.join(os.path.dirname(sys.executable), "Scripts")
+            candidate = os.path.join(scripts, "yt-dlp.exe")
+            if os.path.exists(candidate):
+                found = candidate
+        if not found:
+            state.add_log("yt-dlp bulunamadi! pip install yt-dlp", "error")
+            return ""
+        return found
+
     def start(self):
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        local_mpv  = os.path.join(script_dir, "mpv.exe")
+        mpv_bin    = local_mpv if os.path.exists(local_mpv) else "mpv"
         args = [
-            "mpv", "--idle=yes", "--no-terminal", "--no-video",
+            mpv_bin, "--idle=yes", "--no-terminal", "--no-video",
             f"--input-ipc-server={self._ipc}",
-            "--ytdl=yes", "--ytdl-format=bestaudio",
+            "--ytdl=no",
+            f"--log-file={os.path.join(os.path.dirname(os.path.abspath(__file__)), 'mpv.log')}",
         ]
         try:
             self._proc = subprocess.Popen(
                 args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
             )
             state.add_log("mpv baslatildi")
-            time.sleep(1.0)
+            time.sleep(1.2)
             self._connect()
         except FileNotFoundError:
             state.add_log("mpv bulunamadi! Kurun: https://mpv.io", "error")
@@ -242,11 +261,23 @@ class MpvBridge:
             except: pass
 
     def _connect(self):
+        if sys.platform == "win32":
+            import ctypes
+            GENERIC_WRITE  = 0x40000000
+            OPEN_EXISTING  = 3
+            INVALID_HANDLE = ctypes.c_void_p(-1).value
+            k32 = ctypes.windll.kernel32
+            for _ in range(20):
+                h = k32.CreateFileW(self._ipc, GENERIC_WRITE, 0, None, OPEN_EXISTING, 0x80, None)
+                if h != INVALID_HANDLE:
+                    k32.CloseHandle(h)
+                    state.add_log("mpv IPC hazir")
+                    return
+                time.sleep(0.3)
+            state.add_log("mpv named pipe acilamadi", "warn")
+            return
         for _ in range(15):
             try:
-                if sys.platform == "win32":
-                    self._sock = None  # Windows: open() ile yaziyoruz
-                    return
                 s = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
                 s.connect(self._ipc)
                 self._sock = s
@@ -260,16 +291,30 @@ class MpvBridge:
         with self._lock:
             try:
                 if sys.platform == "win32":
-                    with open(self._ipc, "wb", buffering=0) as p:
-                        p.write(msg)
+                    self._win32_write(msg)
                 elif self._sock:
                     self._sock.sendall(msg)
             except Exception as e:
                 state.add_log(f"mpv IPC hata: {e}", "warn")
-                self._connect()
 
-    def load(self, track_id: str):
-        url = f"https://music.youtube.com/watch?v={track_id}"
+    def _win32_write(self, data: bytes):
+        import ctypes
+        GENERIC_WRITE  = 0x40000000
+        OPEN_EXISTING  = 3
+        INVALID_HANDLE = ctypes.c_void_p(-1).value
+        k32 = ctypes.windll.kernel32
+        h = k32.CreateFileW(self._ipc, GENERIC_WRITE, 0, None, OPEN_EXISTING, 0x80, None)
+        if h == INVALID_HANDLE:
+            raise OSError(f"CreateFile failed err={k32.GetLastError()}")
+        try:
+            written = ctypes.c_ulong(0)
+            k32.WriteFile(h, data, len(data), ctypes.byref(written), None)
+        finally:
+            k32.CloseHandle(h)
+
+    def load(self, track_id: str, stream_url: str = ""):
+        """stream_url varsa direkt kullan, yoksa track_id ile YouTube URL ver."""
+        url = stream_url if stream_url else f"https://music.youtube.com/watch?v={track_id}"
         self._cmd(["loadfile", url, "replace"])
 
     def play(self, pos_ms: Optional[int] = None):
@@ -538,8 +583,12 @@ class MetroClient:
             position_ms=pos_ms,
             position_ts=time.monotonic() if play else 0,
         )
-        self.mpv.load(proto_track.id)
-        await asyncio.sleep(0.5)
+
+        # yt-dlp ile stream URL'yi Python'dan çek
+        stream_url = await self._get_stream_url(proto_track.id)
+        self.mpv.load(proto_track.id, stream_url)
+
+        await asyncio.sleep(1.0)
         if pos_ms > 0:
             self.mpv.seek(pos_ms)
         if play:
@@ -552,6 +601,36 @@ class MetroClient:
                 pb.BufferReadyPayload(track_id=proto_track.id),
             ))
         except: pass
+
+    async def _get_stream_url(self, video_id: str) -> str:
+        """yt-dlp subprocess ile YouTube stream URL'sini çeker."""
+        ytdlp = MpvBridge._find_ytdlp()
+        if not ytdlp:
+            state.add_log("yt-dlp bulunamadi, direkt URL deneniyor", "warn")
+            return ""
+        yt_url = f"https://music.youtube.com/watch?v={video_id}"
+        try:
+            proc = await asyncio.create_subprocess_exec(
+                ytdlp, "-f", "bestaudio/best", "-g", "--no-playlist", yt_url,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE,
+            )
+            stdout, stderr = await asyncio.wait_for(proc.communicate(), timeout=15)
+            lines = stdout.decode(errors="replace").strip().splitlines()
+            url = lines[0] if lines else ""
+            if url:
+                state.add_log(f"Stream URL alindi")
+                return url
+            else:
+                err = stderr.decode(errors="replace")[:200]
+                state.add_log(f"yt-dlp hata: {err}", "error")
+                return ""
+        except asyncio.TimeoutError:
+            state.add_log("yt-dlp timeout (15s)", "error")
+            return ""
+        except Exception as e:
+            state.add_log(f"yt-dlp exception: {e}", "error")
+            return ""
 
 
 def _live_pos(position_ms: int, last_update_ms: int, is_playing: bool) -> int:
