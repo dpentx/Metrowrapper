@@ -1,0 +1,416 @@
+[   0.001][v][cplayer] mpv v0.41.0 Copyright © 2000-2025 mpv/MPlayer/mplayer2 projects
+[   0.001][v][cplayer]  built on Jan  1 1980 00:00:00
+[   0.001][v][cplayer] libplacebo version: v7.360.1
+[   0.001][v][cplayer] FFmpeg version: 8.1
+[   0.001][v][cplayer] FFmpeg library versions:
+[   0.001][v][cplayer]    libavcodec      62.28.100
+[   0.001][v][cplayer]    libavdevice     62.3.100
+[   0.001][v][cplayer]    libavfilter     11.14.100
+[   0.001][v][cplayer]    libavformat     62.12.100
+[   0.001][v][cplayer]    libavutil       60.26.100
+[   0.001][v][cplayer]    libswresample   6.3.100
+[   0.001][v][cplayer]    libswscale      9.5.100
+[   0.001][v][cplayer] Configuration: <omitted>
+[   0.001][v][cplayer] List of enabled features: alsa build-date caca cplugins cuda-hwaccel cuda-interop dmabuf-interop-gl dmabuf-wayland drm dvbin dvdnav egl egl-drm egl-wayland egl-x11 ffmpeg ffnvcodec gbm gl glibc-thread-name glob glob-posix gpl iconv javascript lcms2 libarchive libass libavdevice libbluray libdl libplacebo linux-fstatfs lua memfd-create memrchr openal pipewire posix posix-shm ppoll pthread-condattr-setclock pulse rubberband rubberband-3 uchardet vaapi vaapi-drm vaapi-wayland vaapi-x11 vdpau vector vk-khr-display vt.h vulkan wayland wayland-protocols-1-32 wayland-protocols-1-38 wayland-protocols-1-39 wayland-protocols-1-41 wayland-protocols-1-44 wayland-protocols-1-47 x11 x11-clipboard zimg zimg-st428 zlib
+[   0.001][v][cplayer] Command line options: '--idle=yes' '--no-terminal' '--no-video' '--input-ipc-server=/tmp/metrowrap.sock' '--ytdl=no' '--log-file=/home/asus/metrowrapper/mpv.log'
+[   0.001][v][cplayer] mpv v0.41.0 Copyright © 2000-2025 mpv/MPlayer/mplayer2 projects
+[   0.001][v][cplayer]  built on Jan  1 1980 00:00:00
+[   0.001][v][cplayer] libplacebo version: v7.360.1
+[   0.001][v][cplayer] FFmpeg version: 8.1
+[   0.001][v][cplayer] FFmpeg library versions:
+[   0.001][v][cplayer]    libavcodec      62.28.100
+[   0.001][v][cplayer]    libavdevice     62.3.100
+[   0.001][v][cplayer]    libavfilter     11.14.100
+[   0.001][v][cplayer]    libavformat     62.12.100
+[   0.001][v][cplayer]    libavutil       60.26.100
+[   0.001][v][cplayer]    libswresample   6.3.100
+[   0.001][v][cplayer]    libswscale      9.5.100
+[   0.001][v][cplayer] Configuration: <omitted>
+[   0.001][v][cplayer] List of enabled features: alsa build-date caca cplugins cuda-hwaccel cuda-interop dmabuf-interop-gl dmabuf-wayland drm dvbin dvdnav egl egl-drm egl-wayland egl-x11 ffmpeg ffnvcodec gbm gl glibc-thread-name glob glob-posix gpl iconv javascript lcms2 libarchive libass libavdevice libbluray libdl libplacebo linux-fstatfs lua memfd-create memrchr openal pipewire posix posix-shm ppoll pthread-condattr-setclock pulse rubberband rubberband-3 uchardet vaapi vaapi-drm vaapi-wayland vaapi-x11 vdpau vector vk-khr-display vt.h vulkan wayland wayland-protocols-1-32 wayland-protocols-1-38 wayland-protocols-1-39 wayland-protocols-1-41 wayland-protocols-1-44 wayland-protocols-1-47 x11 x11-clipboard zimg zimg-st428 zlib
+[   0.001][d][global] home path: '' -> '/home/asus/.config/mpv'
+[   0.041][d][global] user path: '~~home/' -> '/home/asus/.config/mpv'
+[   0.041][d][global] user path: '~~old_home/' -> '/home/asus/.mpv'
+[   0.079][d][global] config path: 'encoding-profiles.conf' -/-> '/home/asus/.config/mpv/encoding-profiles.conf'
+[   0.079][d][global] config path: 'encoding-profiles.conf' -/-> '/home/asus/.mpv/encoding-profiles.conf'
+[   0.079][d][global] config path: 'encoding-profiles.conf' -/-> '/etc/mpv/encoding-profiles.conf'
+[   0.079][d][global] config path: 'mpv.conf' -/-> '/home/asus/.config/mpv/mpv.conf'
+[   0.079][d][global] config path: 'config' -/-> '/home/asus/.config/mpv/config'
+[   0.079][d][global] config path: 'mpv.conf' -/-> '/home/asus/.mpv/mpv.conf'
+[   0.079][d][global] config path: 'config' -/-> '/home/asus/.mpv/config'
+[   0.079][d][global] config path: 'mpv.conf' -/-> '/etc/mpv/mpv.conf'
+[   0.079][d][global] config path: 'config' -/-> '/etc/mpv/config'
+[   0.079][v][cplayer] Setting option 'idle' = 'yes' (flags = 8)
+[   0.079][v][cplayer] Setting option 'terminal' = 'no' (flags = 8)
+[   0.079][v][cplayer] Setting option 'video' = 'no' (flags = 8)
+[   0.079][v][cplayer] Setting option 'input-ipc-server' = '/tmp/metrowrap.sock' (flags = 8)
+[   0.079][v][cplayer] Setting option 'ytdl' = 'no' (flags = 8)
+[   0.079][v][cplayer] Setting option 'log-file' = '/home/asus/metrowrapper/mpv.log' (flags = 8)
+[   0.089][d][global] config path: 'input.conf' -/-> '/home/asus/.config/mpv/input.conf'
+[   0.089][d][global] config path: 'input.conf' -/-> '/home/asus/.mpv/input.conf'
+[   0.089][d][global] config path: 'input.conf' -/-> '/etc/mpv/input.conf'
+[   0.089][d][osc] Loading lua script @osc.lua...
+[   0.089][d][stats] Loading lua script @stats.lua...
+[   0.090][d][console] Loading lua script @console.lua...
+[   0.090][d][auto_profiles] Loading lua script @auto_profiles.lua...
+[   0.090][d][select] Loading lua script @select.lua...
+[   0.090][d][positioning] Loading lua script @positioning.lua...
+[   0.090][d][osc] loading mp.defaults
+[   0.090][d][stats] loading mp.defaults
+[   0.090][d][commands] Loading lua script @commands.lua...
+[   0.091][d][context_menu] Loading lua script @context_menu.lua...
+[   0.091][d][console] loading mp.defaults
+[   0.091][d][auto_profiles] loading mp.defaults
+[   0.093][d][select] loading mp.defaults
+[   0.093][d][positioning] loading mp.defaults
+[   0.093][d][commands] loading mp.defaults
+[   0.093][d][context_menu] loading mp.defaults
+[   0.096][v][clipboard/wayland] Registered interface ext_data_control_manager_v1 at version 1
+[   0.096][v][clipboard/wayland] Registered interface wl_seat at version 8
+[   0.097][d][osc] loading @osc.lua
+[   0.097][d][stats] loading @stats.lua
+[   0.097][d][auto_profiles] loading @auto_profiles.lua
+[   0.097][d][select] loading @select.lua
+[   0.098][d][positioning] loading @positioning.lua
+[   0.101][v][clipboard] Initialized wayland clipboard backend.
+[   0.101][d][global] config path: 'scripts' -/-> '/home/asus/.config/mpv/scripts'
+[   0.101][d][global] config path: 'scripts' -/-> '/home/asus/.mpv/scripts'
+[   0.101][d][global] config path: 'scripts' -/-> '/etc/mpv/scripts'
+[   0.101][v][cplayer] Waiting for scripts...
+[   0.102][v][ipc] Starting IPC master
+[   0.102][v][ipc] Listening to IPC socket.
+[   0.102][d][context_menu] loading @context_menu.lua
+[   0.102][d][console] loading @console.lua
+[   0.103][d][positioning] reading options for positioning
+[   0.103][d][global] config path: 'script-opts/positioning.conf' -/-> '/home/asus/.config/mpv/script-opts/positioning.conf'
+[   0.103][d][global] config path: 'script-opts/positioning.conf' -/-> '/home/asus/.mpv/script-opts/positioning.conf'
+[   0.103][d][global] config path: 'script-opts/positioning.conf' -/-> '/etc/mpv/script-opts/positioning.conf'
+[   0.103][d][positioning] script-opts/positioning.conf not found.
+[   0.103][d][global] config path: 'lua-settings/positioning.conf' -/-> '/home/asus/.config/mpv/lua-settings/positioning.conf'
+[   0.103][d][global] config path: 'lua-settings/positioning.conf' -/-> '/home/asus/.mpv/lua-settings/positioning.conf'
+[   0.104][d][global] config path: 'lua-settings/positioning.conf' -/-> '/etc/mpv/lua-settings/positioning.conf'
+[   0.104][d][positioning] lua-settings/positioning.conf not found.
+[   0.104][v][clipboard/wayland] Read 60 bytes from the data offer fd
+[   0.104][v][clipboard/wayland] Read 60 bytes from the data offer fd
+[   0.106][d][select] reading options for select
+[   0.106][d][global] config path: 'script-opts/select.conf' -/-> '/home/asus/.config/mpv/script-opts/select.conf'
+[   0.106][d][global] config path: 'script-opts/select.conf' -/-> '/home/asus/.mpv/script-opts/select.conf'
+[   0.106][d][global] config path: 'script-opts/select.conf' -/-> '/etc/mpv/script-opts/select.conf'
+[   0.106][d][select] script-opts/select.conf not found.
+[   0.106][d][global] config path: 'lua-settings/select.conf' -/-> '/home/asus/.config/mpv/lua-settings/select.conf'
+[   0.106][d][global] config path: 'lua-settings/select.conf' -/-> '/home/asus/.mpv/lua-settings/select.conf'
+[   0.106][d][global] config path: 'lua-settings/select.conf' -/-> '/etc/mpv/lua-settings/select.conf'
+[   0.106][d][select] lua-settings/select.conf not found.
+[   0.106][d][commands] loading @commands.lua
+[   0.106][d][cplayer] Run command: define-section, flags=64, args=[name="input_positioning", contents="", flags="default"]
+[   0.106][d][cplayer] Run command: enable-section, flags=64, args=[name="input_positioning", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.106][d][cplayer] Run command: define-section, flags=64, args=[name="input_forced_positioning", contents="", flags="force"]
+[   0.107][d][cplayer] Run command: enable-section, flags=64, args=[name="input_forced_positioning", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.109][d][context_menu] reading options for context_menu
+[   0.109][d][global] config path: 'script-opts/context_menu.conf' -/-> '/home/asus/.config/mpv/script-opts/context_menu.conf'
+[   0.109][d][global] config path: 'script-opts/context_menu.conf' -/-> '/home/asus/.mpv/script-opts/context_menu.conf'
+[   0.109][d][global] config path: 'script-opts/context_menu.conf' -/-> '/etc/mpv/script-opts/context_menu.conf'
+[   0.109][d][context_menu] script-opts/context_menu.conf not found.
+[   0.109][d][global] config path: 'lua-settings/context_menu.conf' -/-> '/home/asus/.config/mpv/lua-settings/context_menu.conf'
+[   0.109][d][global] config path: 'lua-settings/context_menu.conf' -/-> '/home/asus/.mpv/lua-settings/context_menu.conf'
+[   0.109][d][global] config path: 'lua-settings/context_menu.conf' -/-> '/etc/mpv/lua-settings/context_menu.conf'
+[   0.109][d][context_menu] lua-settings/context_menu.conf not found.
+[   0.109][d][cplayer] Run command: define-section, flags=64, args=[name="input_select", contents="", flags="default"]
+[   0.109][d][cplayer] Run command: enable-section, flags=64, args=[name="input_select", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.109][d][cplayer] Run command: define-section, flags=64, args=[name="input_forced_select", contents="", flags="force"]
+[   0.109][d][cplayer] Run command: enable-section, flags=64, args=[name="input_forced_select", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.110][d][auto_profiles] Destroying client handle...
+[   0.112][d][stats] reading options for stats
+[   0.112][d][global] config path: 'script-opts/stats.conf' -/-> '/home/asus/.config/mpv/script-opts/stats.conf'
+[   0.112][d][global] config path: 'script-opts/stats.conf' -/-> '/home/asus/.mpv/script-opts/stats.conf'
+[   0.112][d][global] config path: 'script-opts/stats.conf' -/-> '/etc/mpv/script-opts/stats.conf'
+[   0.112][d][stats] script-opts/stats.conf not found.
+[   0.112][d][global] config path: 'lua-settings/stats.conf' -/-> '/home/asus/.config/mpv/lua-settings/stats.conf'
+[   0.112][d][global] config path: 'lua-settings/stats.conf' -/-> '/home/asus/.mpv/lua-settings/stats.conf'
+[   0.112][d][global] config path: 'lua-settings/stats.conf' -/-> '/etc/mpv/lua-settings/stats.conf'
+[   0.112][d][stats] lua-settings/stats.conf not found.
+[   0.114][d][cplayer] Run command: define-section, flags=64, args=[name="input_stats", contents="", flags="default"]
+[   0.114][d][cplayer] Run command: enable-section, flags=64, args=[name="input_stats", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.114][d][cplayer] Run command: define-section, flags=64, args=[name="input_forced_stats", contents="", flags="force"]
+[   0.114][d][cplayer] Run command: enable-section, flags=64, args=[name="input_forced_stats", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.115][d][commands] reading options for commands
+[   0.115][d][global] config path: 'script-opts/commands.conf' -/-> '/home/asus/.config/mpv/script-opts/commands.conf'
+[   0.115][d][global] config path: 'script-opts/commands.conf' -/-> '/home/asus/.mpv/script-opts/commands.conf'
+[   0.115][d][global] config path: 'script-opts/commands.conf' -/-> '/etc/mpv/script-opts/commands.conf'
+[   0.115][d][commands] script-opts/commands.conf not found.
+[   0.115][d][global] config path: 'lua-settings/commands.conf' -/-> '/home/asus/.config/mpv/lua-settings/commands.conf'
+[   0.115][d][global] config path: 'lua-settings/commands.conf' -/-> '/home/asus/.mpv/lua-settings/commands.conf'
+[   0.115][d][global] config path: 'lua-settings/commands.conf' -/-> '/etc/mpv/lua-settings/commands.conf'
+[   0.115][d][commands] lua-settings/commands.conf not found.
+[   0.116][d][console] reading options for console
+[   0.116][d][global] config path: 'script-opts/console.conf' -/-> '/home/asus/.config/mpv/script-opts/console.conf'
+[   0.116][d][global] config path: 'script-opts/console.conf' -/-> '/home/asus/.mpv/script-opts/console.conf'
+[   0.116][d][global] config path: 'script-opts/console.conf' -/-> '/etc/mpv/script-opts/console.conf'
+[   0.116][d][console] script-opts/console.conf not found.
+[   0.116][d][global] config path: 'lua-settings/console.conf' -/-> '/home/asus/.config/mpv/lua-settings/console.conf'
+[   0.116][d][global] config path: 'lua-settings/console.conf' -/-> '/home/asus/.mpv/lua-settings/console.conf'
+[   0.116][d][global] config path: 'lua-settings/console.conf' -/-> '/etc/mpv/lua-settings/console.conf'
+[   0.116][d][console] lua-settings/console.conf not found.
+[   0.116][d][cplayer] Run command: define-section, flags=64, args=[name="input_commands", contents="", flags="default"]
+[   0.116][d][cplayer] Run command: enable-section, flags=64, args=[name="input_commands", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.116][d][cplayer] Run command: define-section, flags=64, args=[name="input_forced_commands", contents="", flags="force"]
+[   0.116][d][cplayer] Run command: enable-section, flags=64, args=[name="input_forced_commands", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.116][d][cplayer] Run command: define-section, flags=64, args=[name="input_console", contents="", flags="default"]
+[   0.116][d][cplayer] Run command: enable-section, flags=64, args=[name="input_console", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.116][d][cplayer] Run command: define-section, flags=64, args=[name="input_forced_console", contents="", flags="force"]
+[   0.117][d][cplayer] Run command: enable-section, flags=64, args=[name="input_forced_console", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.119][d][cplayer] Run command: define-section, flags=64, args=[name="showhide", contents="mouse_move script-binding osc/__keybinding1\nmouse_leave script-binding osc/__keybinding2\n", flags="force"]
+[   0.119][d][cplayer] Run command: define-section, flags=64, args=[name="showhide_wc", contents="mouse_move script-binding osc/__keybinding3\nmouse_leave script-binding osc/__keybinding4\n", flags="force"]
+[   0.119][d][cplayer] Run command: enable-section, flags=64, args=[name="showhide", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.119][d][cplayer] Run command: enable-section, flags=64, args=[name="showhide_wc", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.119][d][cplayer] Run command: define-section, flags=64, args=[name="input", contents="mbtn_left script-binding osc/__keybinding5\nmbtn_mid script-binding osc/__keybinding6\nmbtn_right script-binding osc/__keybinding7\nshift+mbtn_left script-binding osc/__keybinding8\nwheel_up script-binding osc/__keybinding9\nwheel_down script-binding osc/__keybinding10\nmbtn_left_dbl ignore\nshift+mbtn_left_dbl ignore\nmbtn_right_dbl ignore\n", flags="force"]
+[   0.119][d][cplayer] Run command: enable-section, flags=64, args=[name="input", flags=""]
+[   0.119][d][cplayer] Run command: define-section, flags=64, args=[name="window-controls", contents="mbtn_left script-binding osc/__keybinding11\n", flags="force"]
+[   0.119][d][cplayer] Run command: enable-section, flags=64, args=[name="window-controls", flags=""]
+[   0.119][d][osc] reading options for osc
+[   0.119][d][global] config path: 'script-opts/osc.conf' -/-> '/home/asus/.config/mpv/script-opts/osc.conf'
+[   0.119][d][global] config path: 'script-opts/osc.conf' -/-> '/home/asus/.mpv/script-opts/osc.conf'
+[   0.119][d][global] config path: 'script-opts/osc.conf' -/-> '/etc/mpv/script-opts/osc.conf'
+[   0.119][d][osc] script-opts/osc.conf not found.
+[   0.119][d][global] config path: 'lua-settings/osc.conf' -/-> '/home/asus/.config/mpv/lua-settings/osc.conf'
+[   0.119][d][global] config path: 'lua-settings/osc.conf' -/-> '/home/asus/.mpv/lua-settings/osc.conf'
+[   0.119][d][global] config path: 'lua-settings/osc.conf' -/-> '/etc/mpv/lua-settings/osc.conf'
+[   0.119][d][osc] lua-settings/osc.conf not found.
+[   0.120][v][cplayer] Set property: user-data/osc/visibility="auto" -> 1
+[   0.120][d][cplayer] Run command: disable-section, flags=64, args=[name="input"]
+[   0.120][d][cplayer] Run command: disable-section, flags=64, args=[name="window-controls"]
+[   0.120][v][cplayer] Set property: user-data/osc/margins={"l":0,"b":0,"r":0,"t":0} -> 1
+[   0.120][v][cplayer] Done loading scripts.
+[   0.121][d][osc] osc_init
+[   0.122][v][cplayer] Set property: user-data/osc/margins={"l":0,"b":0,"r":0,"t":0} -> 1
+[   0.122][d][global] config path: 'fonts' -/-> '/home/asus/.config/mpv/fonts'
+[   0.122][d][global] config path: 'fonts' -/-> '/home/asus/.mpv/fonts'
+[   0.122][d][global] config path: 'fonts' -/-> '/etc/mpv/fonts'
+[   0.122][d][osd/libass] ASS library version: 0x1704000 (runtime 0x1704000)
+[   0.122][v][osd/libass] libass API version: 0x1704000
+[   0.122][v][osd/libass] libass source: tarball: 0.17.4
+[   0.123][v][osd/libass] Shaper: FriBidi 1.0.16 (SIMPLE) HarfBuzz-ng 13.2.1 (COMPLEX)
+[   0.123][d][global] config path: 'subfont.ttf' -/-> '/home/asus/.config/mpv/subfont.ttf'
+[   0.123][d][global] config path: 'subfont.ttf' -/-> '/home/asus/.mpv/subfont.ttf'
+[   0.123][d][global] config path: 'subfont.ttf' -/-> '/etc/mpv/subfont.ttf'
+[   0.123][d][global] config path: 'fonts.conf' -/-> '/home/asus/.config/mpv/fonts.conf'
+[   0.123][d][global] config path: 'fonts.conf' -/-> '/home/asus/.mpv/fonts.conf'
+[   0.123][d][global] config path: 'fonts.conf' -/-> '/etc/mpv/fonts.conf'
+[   0.123][v][osd/libass] Setting up fonts...
+[   0.146][v][osd/libass] Using font provider fontconfig
+[   0.146][v][osd/libass] Done.
+[   0.147][v][cplayer] Set property: user-data/osc/margins={"l":0,"b":0,"r":0,"t":0} -> 1
+[   0.147][d][cplayer] Run command: define-section, flags=64, args=[name="input_osc", contents="", flags="default"]
+[   0.147][d][cplayer] Run command: enable-section, flags=64, args=[name="input_osc", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.147][d][cplayer] Run command: define-section, flags=64, args=[name="input_forced_osc", contents="", flags="force"]
+[   0.147][d][cplayer] Run command: enable-section, flags=64, args=[name="input_forced_osc", flags="allow-hide-cursor+allow-vo-dragging"]
+[   0.168][v][ipc_0] Client connected
+[   0.168][v][ipc_0] Client disconnected
+[   0.168][d][ipc_0] Destroying client handle...
+[  42.373][v][ipc_1] Client connected
+[  42.373][d][cplayer] Run command: loadfile, flags=64, args=[url="https://rr8---sn-u0g3uxax3-xg1e.googlevideo.com/videoplayback?expire=1780521538&ei=4kUgaqS9BIvJi9oP4ezM-AM&ip=88.247.186.34&id=o-AGnv0jLWZCRd3wBQrSylG5NT5NtXWvZAKQ8u3SzpsU-1&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=481&met=1780499938%2C&mh=mp&mm=31%2C29&mn=sn-u0g3uxax3-xg1e%2Csn-ajnv4c-5p&ms=au%2Crdu&mv=m&mvi=8&pcm2cms=yes&pl=23&rms=au%2Cau&gcr=tr&initcwndbps=1363750&bui=AbKmrwrwMETFzldsT7HqNkYCvk0ngmVpg9vSZnRfNfI40Iz3-uSrSvl_jP5yCyTp0pMXc719lCi2SHit&spc=96Xrv2hJnlIAuyuZroGX79tIfAb1eOpq5qimbSdl-iKr&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=2642422&dur=153.641&lmt=1765060667389179&mt=1780499640&fvip=5&keepalive=yes&fexp=51565115%2C51565681&c=ANDROID_VR&txp=5532534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRQIgJrmHuYLdQTYDommqORgNY6JIQZyjq74X4jeoQk5kjOgCIQCnQfWxMW-Km5GfKGqEgE-x1J35MTp-GWKKjzeWNa025g%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhANvLcaL5NcxBrQx2Y0OBEvZg0FcVMQk3HT-rAcwoV20vAiEA1cAWiZpJ8uDHGfJV0hZHdU-ATmA9VUrBC4svpN--HFk%3D", flags="replace", index="-1", options=""]
+[  42.373][e][ipc_1] Write error (Broken pipe)
+[  42.373][d][ipc_1] Destroying client handle...
+[  42.373][v][cplayer] Running hook: auto_profiles/on_before_start_file
+[  42.373][v][cplayer] Failed sending hook command auto_profiles/on_before_start_file. Removing hook.
+[  42.373][d][global] state path: 'watch_later' -> '/home/asus/.local/state/mpv/watch_later'
+[  42.373][v][cplayer] Running hook: auto_profiles/on_load
+[  42.373][v][cplayer] Failed sending hook command auto_profiles/on_load. Removing hook.
+[  42.374][v][stream_callback] Opening https://rr8---sn-u0g3uxax3-xg1e.googlevideo.com/videoplayback?expire=1780521538&ei=4kUgaqS9BIvJi9oP4ezM-AM&ip=88.247.186.34&id=o-AGnv0jLWZCRd3wBQrSylG5NT5NtXWvZAKQ8u3SzpsU-1&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=481&met=1780499938%2C&mh=mp&mm=31%2C29&mn=sn-u0g3uxax3-xg1e%2Csn-ajnv4c-5p&ms=au%2Crdu&mv=m&mvi=8&pcm2cms=yes&pl=23&rms=au%2Cau&gcr=tr&initcwndbps=1363750&bui=AbKmrwrwMETFzldsT7HqNkYCvk0ngmVpg9vSZnRfNfI40Iz3-uSrSvl_jP5yCyTp0pMXc719lCi2SHit&spc=96Xrv2hJnlIAuyuZroGX79tIfAb1eOpq5qimbSdl-iKr&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=2642422&dur=153.641&lmt=1765060667389179&mt=1780499640&fvip=5&keepalive=yes&fexp=51565115%2C51565681&c=ANDROID_VR&txp=5532534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRQIgJrmHuYLdQTYDommqORgNY6JIQZyjq74X4jeoQk5kjOgCIQCnQfWxMW-Km5GfKGqEgE-x1J35MTp-GWKKjzeWNa025g%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhANvLcaL5NcxBrQx2Y0OBEvZg0FcVMQk3HT-rAcwoV20vAiEA1cAWiZpJ8uDHGfJV0hZHdU-ATmA9VUrBC4svpN--HFk%3D
+[  42.374][v][ffmpeg] Opening https://rr8---sn-u0g3uxax3-xg1e.googlevideo.com/videoplayback?expire=1780521538&ei=4kUgaqS9BIvJi9oP4ezM-AM&ip=88.247.186.34&id=o-AGnv0jLWZCRd3wBQrSylG5NT5NtXWvZAKQ8u3SzpsU-1&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=481&met=1780499938%2C&mh=mp&mm=31%2C29&mn=sn-u0g3uxax3-xg1e%2Csn-ajnv4c-5p&ms=au%2Crdu&mv=m&mvi=8&pcm2cms=yes&pl=23&rms=au%2Cau&gcr=tr&initcwndbps=1363750&bui=AbKmrwrwMETFzldsT7HqNkYCvk0ngmVpg9vSZnRfNfI40Iz3-uSrSvl_jP5yCyTp0pMXc719lCi2SHit&spc=96Xrv2hJnlIAuyuZroGX79tIfAb1eOpq5qimbSdl-iKr&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=2642422&dur=153.641&lmt=1765060667389179&mt=1780499640&fvip=5&keepalive=yes&fexp=51565115%2C51565681&c=ANDROID_VR&txp=5532534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRQIgJrmHuYLdQTYDommqORgNY6JIQZyjq74X4jeoQk5kjOgCIQCnQfWxMW-Km5GfKGqEgE-x1J35MTp-GWKKjzeWNa025g%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhANvLcaL5NcxBrQx2Y0OBEvZg0FcVMQk3HT-rAcwoV20vAiEA1cAWiZpJ8uDHGfJV0hZHdU-ATmA9VUrBC4svpN--HFk%3D
+[  42.374][d][osc] osc_init
+[  42.375][v][cplayer] Set property: user-data/osc/margins={"l":0,"b":0,"r":0,"t":0} -> 1
+[  42.387][d][ffmpeg] tcp: Starting connection attempt to 212.156.191.20 port 443
+[  42.398][d][ffmpeg] tcp: Successfully connected to 212.156.191.20 port 443
+[  43.375][v][ipc_2] Client connected
+[  43.376][v][cplayer] Set property: pause=true -> 1
+[  43.376][e][ipc_2] Write error (Broken pipe)
+[  43.376][d][ipc_2] Destroying client handle...
+[  43.376][v][ipc_3] Client connected
+[  43.377][d][cplayer] Run command: seek, flags=64, args=[target="0.000000", flags="absolute", legacy="unused"]
+[  43.377][e][ipc_3] Write error (Broken pipe)
+[  43.377][d][ipc_3] Destroying client handle...
+[  48.897][v][ipc_4] Client connected
+[  48.897][d][cplayer] Run command: loadfile, flags=64, args=[url="https://rr8---sn-u0g3uxax3-xg1e.googlevideo.com/videoplayback?expire=1780521545&ei=6UUgaoSfJ-jmi9oP1u68kQo&ip=88.247.186.34&id=o-AGpkGg_w1MvB71SAOyaU7KY86mY281IeHQ1bRV2y32eS&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=478&met=1780499945%2C&mh=mp&mm=31%2C29&mn=sn-u0g3uxax3-xg1e%2Csn-nv47lns6&ms=au%2Crdu&mv=m&mvi=8&pl=23&rms=au%2Cau&gcr=tr&initcwndbps=1363750&bui=AbKmrwrMa9jpeZODTalkuupKoeT1EXq6rZ9MkjkKp17R2IiCYYUEvkviHjCaFnY81yFhx8a7o3jDFgov&spc=96Xrv7S4GUPaPWgjuRAJkOQ6SlQ9jn9eB27NpcQ8ygrm&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=2642422&dur=153.641&lmt=1765060667389179&mt=1780499640&fvip=1&keepalive=yes&fexp=51565116%2C51565681&c=ANDROID_VR&txp=5532534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRAIgU-V6IWM4ELnmqc2ilMgfpZKOyINtPOyNTJEmq3DX5OACIF-kVFlfrSQY6xVCaEmoNV93jgC651r2D6UCS_eOyDJ3&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAOLHdh8EK6L5bp4pb89vWkvwMDnYtP51Sln3ON3YHb-9AiEAndVg9_SmDdkcIRVhD4trzozBERNaBl39Ogti44W3-xE%3D", flags="replace", index="-1", options=""]
+[  48.897][e][ipc_4] Write error (Broken pipe)
+[  48.897][d][ipc_4] Destroying client handle...
+[  48.979][v][cplayer] Opening failed or was aborted: https://rr8---sn-u0g3uxax3-xg1e.googlevideo.com/videoplayback?expire=1780521538&ei=4kUgaqS9BIvJi9oP4ezM-AM&ip=88.247.186.34&id=o-AGnv0jLWZCRd3wBQrSylG5NT5NtXWvZAKQ8u3SzpsU-1&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=481&met=1780499938%2C&mh=mp&mm=31%2C29&mn=sn-u0g3uxax3-xg1e%2Csn-ajnv4c-5p&ms=au%2Crdu&mv=m&mvi=8&pcm2cms=yes&pl=23&rms=au%2Cau&gcr=tr&initcwndbps=1363750&bui=AbKmrwrwMETFzldsT7HqNkYCvk0ngmVpg9vSZnRfNfI40Iz3-uSrSvl_jP5yCyTp0pMXc719lCi2SHit&spc=96Xrv2hJnlIAuyuZroGX79tIfAb1eOpq5qimbSdl-iKr&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=2642422&dur=153.641&lmt=1765060667389179&mt=1780499640&fvip=5&keepalive=yes&fexp=51565115%2C51565681&c=ANDROID_VR&txp=5532534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRQIgJrmHuYLdQTYDommqORgNY6JIQZyjq74X4jeoQk5kjOgCIQCnQfWxMW-Km5GfKGqEgE-x1J35MTp-GWKKjzeWNa025g%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhANvLcaL5NcxBrQx2Y0OBEvZg0FcVMQk3HT-rAcwoV20vAiEA1cAWiZpJ8uDHGfJV0hZHdU-ATmA9VUrBC4svpN--HFk%3D
+[  48.979][v][cplayer] finished playback, success (reason 2)
+[  48.980][d][global] state path: 'watch_later' -> '/home/asus/.local/state/mpv/watch_later'
+[  48.980][v][stream_callback] Opening https://rr8---sn-u0g3uxax3-xg1e.googlevideo.com/videoplayback?expire=1780521545&ei=6UUgaoSfJ-jmi9oP1u68kQo&ip=88.247.186.34&id=o-AGpkGg_w1MvB71SAOyaU7KY86mY281IeHQ1bRV2y32eS&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=478&met=1780499945%2C&mh=mp&mm=31%2C29&mn=sn-u0g3uxax3-xg1e%2Csn-nv47lns6&ms=au%2Crdu&mv=m&mvi=8&pl=23&rms=au%2Cau&gcr=tr&initcwndbps=1363750&bui=AbKmrwrMa9jpeZODTalkuupKoeT1EXq6rZ9MkjkKp17R2IiCYYUEvkviHjCaFnY81yFhx8a7o3jDFgov&spc=96Xrv7S4GUPaPWgjuRAJkOQ6SlQ9jn9eB27NpcQ8ygrm&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=2642422&dur=153.641&lmt=1765060667389179&mt=1780499640&fvip=1&keepalive=yes&fexp=51565116%2C51565681&c=ANDROID_VR&txp=5532534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRAIgU-V6IWM4ELnmqc2ilMgfpZKOyINtPOyNTJEmq3DX5OACIF-kVFlfrSQY6xVCaEmoNV93jgC651r2D6UCS_eOyDJ3&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAOLHdh8EK6L5bp4pb89vWkvwMDnYtP51Sln3ON3YHb-9AiEAndVg9_SmDdkcIRVhD4trzozBERNaBl39Ogti44W3-xE%3D
+[  48.980][v][ffmpeg] Opening https://rr8---sn-u0g3uxax3-xg1e.googlevideo.com/videoplayback?expire=1780521545&ei=6UUgaoSfJ-jmi9oP1u68kQo&ip=88.247.186.34&id=o-AGpkGg_w1MvB71SAOyaU7KY86mY281IeHQ1bRV2y32eS&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=478&met=1780499945%2C&mh=mp&mm=31%2C29&mn=sn-u0g3uxax3-xg1e%2Csn-nv47lns6&ms=au%2Crdu&mv=m&mvi=8&pl=23&rms=au%2Cau&gcr=tr&initcwndbps=1363750&bui=AbKmrwrMa9jpeZODTalkuupKoeT1EXq6rZ9MkjkKp17R2IiCYYUEvkviHjCaFnY81yFhx8a7o3jDFgov&spc=96Xrv7S4GUPaPWgjuRAJkOQ6SlQ9jn9eB27NpcQ8ygrm&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=2642422&dur=153.641&lmt=1765060667389179&mt=1780499640&fvip=1&keepalive=yes&fexp=51565116%2C51565681&c=ANDROID_VR&txp=5532534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRAIgU-V6IWM4ELnmqc2ilMgfpZKOyINtPOyNTJEmq3DX5OACIF-kVFlfrSQY6xVCaEmoNV93jgC651r2D6UCS_eOyDJ3&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAOLHdh8EK6L5bp4pb89vWkvwMDnYtP51Sln3ON3YHb-9AiEAndVg9_SmDdkcIRVhD4trzozBERNaBl39Ogti44W3-xE%3D
+[  48.981][d][osc] osc_init
+[  48.982][v][cplayer] Set property: user-data/osc/margins={"l":0,"b":0,"r":0,"t":0} -> 1
+[  48.996][d][ffmpeg] tcp: Starting connection attempt to 212.156.191.20 port 443
+[  49.007][d][ffmpeg] tcp: Successfully connected to 212.156.191.20 port 443
+[  49.898][v][ipc_5] Client connected
+[  49.898][v][cplayer] Set property: pause=true -> 1
+[  49.898][e][ipc_5] Write error (Broken pipe)
+[  49.898][d][ipc_5] Destroying client handle...
+[  49.898][v][ipc_6] Client connected
+[  49.898][d][cplayer] Run command: seek, flags=64, args=[target="0.000000", flags="absolute", legacy="unused"]
+[  49.898][e][ipc_6] Write error (Broken pipe)
+[  49.898][v][ipc_7] Client connected
+[  49.898][d][ipc_6] Destroying client handle...
+[  49.899][v][ipc_8] Client connected
+[  49.899][v][cplayer] Set property: pause=true -> 1
+[  49.899][e][ipc_7] Write error (Broken pipe)
+[  49.899][d][cplayer] Run command: seek, flags=64, args=[target="0.000000", flags="absolute", legacy="unused"]
+[  49.899][e][ipc_8] Write error (Broken pipe)
+[  49.899][d][ipc_8] Destroying client handle...
+[  49.899][d][ipc_7] Destroying client handle...
+[  55.445][v][ipc_9] Client connected
+[  55.445][d][cplayer] Run command: loadfile, flags=64, args=[url="https://rr6---sn-u0g3uxax3-xg1e.googlevideo.com/videoplayback?expire=1780521552&ei=8EUgasuNBfuG6dsP65Cd4AY&ip=88.247.186.34&id=o-ALMO_ha46vCIflrSY9ch5oHmBEwgPqZB0hBDgxRiKqbL&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=324&met=1780499952%2C&mh=cJ&mm=31%2C29&mn=sn-u0g3uxax3-xg1e%2Csn-nv47ln6e&ms=au%2Crdu&mv=m&mvi=6&pl=23&rms=au%2Cau&initcwndbps=1363750&bui=AbKmrwqpS_JY5buwrprFwnxebloNIkSyeIeTFOXc6gt2Gur4ZdWTJANR3JbMPVB5f3wbpR3WTIhMSWPF&spc=96Xrv79xpE-K-QnLneNuX0XaMBCqoPYGmEZzJuIu7kPz&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=4012502&dur=239.561&lmt=1776506722491818&mt=1780499640&fvip=5&keepalive=yes&fexp=51565115%2C51565681%2C51946837&c=ANDROID_VR&txp=5432534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRgIhAOIGPqpgfI3oC7QnuQbTFddOJdyrk3ERFanc7iIXAO-vAiEAvi5cdleImCzJhta2Ns-PYiivH85IgpSxgN0hPOpK_rY%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhALBRZcUwyIl1vW0lggO5iiBRKNaLChm9rdE1Mco2Dc9_AiA69CGrQk4Jd3b5NQFUyxrjJ9D0lS55eQMbiJhBBGNEQg%3D%3D", flags="replace", index="-1", options=""]
+[  55.445][e][ipc_9] Write error (Broken pipe)
+[  55.445][d][ipc_9] Destroying client handle...
+[  55.467][v][cplayer] Opening failed or was aborted: https://rr8---sn-u0g3uxax3-xg1e.googlevideo.com/videoplayback?expire=1780521545&ei=6UUgaoSfJ-jmi9oP1u68kQo&ip=88.247.186.34&id=o-AGpkGg_w1MvB71SAOyaU7KY86mY281IeHQ1bRV2y32eS&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=478&met=1780499945%2C&mh=mp&mm=31%2C29&mn=sn-u0g3uxax3-xg1e%2Csn-nv47lns6&ms=au%2Crdu&mv=m&mvi=8&pl=23&rms=au%2Cau&gcr=tr&initcwndbps=1363750&bui=AbKmrwrMa9jpeZODTalkuupKoeT1EXq6rZ9MkjkKp17R2IiCYYUEvkviHjCaFnY81yFhx8a7o3jDFgov&spc=96Xrv7S4GUPaPWgjuRAJkOQ6SlQ9jn9eB27NpcQ8ygrm&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=2642422&dur=153.641&lmt=1765060667389179&mt=1780499640&fvip=1&keepalive=yes&fexp=51565116%2C51565681&c=ANDROID_VR&txp=5532534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRAIgU-V6IWM4ELnmqc2ilMgfpZKOyINtPOyNTJEmq3DX5OACIF-kVFlfrSQY6xVCaEmoNV93jgC651r2D6UCS_eOyDJ3&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAOLHdh8EK6L5bp4pb89vWkvwMDnYtP51Sln3ON3YHb-9AiEAndVg9_SmDdkcIRVhD4trzozBERNaBl39Ogti44W3-xE%3D
+[  55.467][v][cplayer] finished playback, success (reason 2)
+[  55.467][d][global] state path: 'watch_later' -> '/home/asus/.local/state/mpv/watch_later'
+[  55.467][v][stream_callback] Opening https://rr6---sn-u0g3uxax3-xg1e.googlevideo.com/videoplayback?expire=1780521552&ei=8EUgasuNBfuG6dsP65Cd4AY&ip=88.247.186.34&id=o-ALMO_ha46vCIflrSY9ch5oHmBEwgPqZB0hBDgxRiKqbL&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=324&met=1780499952%2C&mh=cJ&mm=31%2C29&mn=sn-u0g3uxax3-xg1e%2Csn-nv47ln6e&ms=au%2Crdu&mv=m&mvi=6&pl=23&rms=au%2Cau&initcwndbps=1363750&bui=AbKmrwqpS_JY5buwrprFwnxebloNIkSyeIeTFOXc6gt2Gur4ZdWTJANR3JbMPVB5f3wbpR3WTIhMSWPF&spc=96Xrv79xpE-K-QnLneNuX0XaMBCqoPYGmEZzJuIu7kPz&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=4012502&dur=239.561&lmt=1776506722491818&mt=1780499640&fvip=5&keepalive=yes&fexp=51565115%2C51565681%2C51946837&c=ANDROID_VR&txp=5432534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRgIhAOIGPqpgfI3oC7QnuQbTFddOJdyrk3ERFanc7iIXAO-vAiEAvi5cdleImCzJhta2Ns-PYiivH85IgpSxgN0hPOpK_rY%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhALBRZcUwyIl1vW0lggO5iiBRKNaLChm9rdE1Mco2Dc9_AiA69CGrQk4Jd3b5NQFUyxrjJ9D0lS55eQMbiJhBBGNEQg%3D%3D
+[  55.468][v][ffmpeg] Opening https://rr6---sn-u0g3uxax3-xg1e.googlevideo.com/videoplayback?expire=1780521552&ei=8EUgasuNBfuG6dsP65Cd4AY&ip=88.247.186.34&id=o-ALMO_ha46vCIflrSY9ch5oHmBEwgPqZB0hBDgxRiKqbL&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=324&met=1780499952%2C&mh=cJ&mm=31%2C29&mn=sn-u0g3uxax3-xg1e%2Csn-nv47ln6e&ms=au%2Crdu&mv=m&mvi=6&pl=23&rms=au%2Cau&initcwndbps=1363750&bui=AbKmrwqpS_JY5buwrprFwnxebloNIkSyeIeTFOXc6gt2Gur4ZdWTJANR3JbMPVB5f3wbpR3WTIhMSWPF&spc=96Xrv79xpE-K-QnLneNuX0XaMBCqoPYGmEZzJuIu7kPz&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=4012502&dur=239.561&lmt=1776506722491818&mt=1780499640&fvip=5&keepalive=yes&fexp=51565115%2C51565681%2C51946837&c=ANDROID_VR&txp=5432534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AHEqNM4wRgIhAOIGPqpgfI3oC7QnuQbTFddOJdyrk3ERFanc7iIXAO-vAiEAvi5cdleImCzJhta2Ns-PYiivH85IgpSxgN0hPOpK_rY%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhALBRZcUwyIl1vW0lggO5iiBRKNaLChm9rdE1Mco2Dc9_AiA69CGrQk4Jd3b5NQFUyxrjJ9D0lS55eQMbiJhBBGNEQg%3D%3D
+[  55.468][d][osc] osc_init
+[  55.468][v][cplayer] Set property: user-data/osc/margins={"l":0,"b":0,"r":0,"t":0} -> 1
+[  55.479][d][ffmpeg] tcp: Starting connection attempt to 212.156.191.18 port 443
+[  55.490][d][ffmpeg] tcp: Successfully connected to 212.156.191.18 port 443
+[  56.446][v][ipc_10] Client connected
+[  56.446][v][cplayer] Set property: pause=true -> 1
+[  56.446][e][ipc_10] Write error (Broken pipe)
+[  56.446][d][ipc_10] Destroying client handle...
+[  56.447][v][ipc_11] Client connected
+[  56.447][v][ipc_12] Client connected
+[  56.447][d][cplayer] Run command: seek, flags=64, args=[target="0.000000", flags="absolute", legacy="unused"]
+[  56.447][e][ipc_11] Write error (Broken pipe)
+[  56.447][d][ipc_11] Destroying client handle...
+[  56.447][v][cplayer] Set property: pause=true -> 1
+[  56.447][e][ipc_12] Write error (Broken pipe)
+[  56.447][d][ipc_12] Destroying client handle...
+[  56.448][v][ipc_13] Client connected
+[  56.448][v][ipc_14] Client connected
+[  56.448][d][cplayer] Run command: seek, flags=64, args=[target="0.000000", flags="absolute", legacy="unused"]
+[  56.448][e][ipc_13] Write error (Broken pipe)
+[  56.448][d][ipc_13] Destroying client handle...
+[  56.448][v][ipc_15] Client connected
+[  56.449][d][cplayer] Run command: seek, flags=64, args=[target="13.979000", flags="absolute", legacy="unused"]
+[  56.449][e][ipc_14] Write error (Broken pipe)
+[  56.449][d][ipc_14] Destroying client handle...
+[  56.449][v][ipc_16] Client connected
+[  56.449][v][ipc_17] Client connected
+[  56.449][v][cplayer] Set property: pause=false -> 1
+[  56.449][e][ipc_15] Write error (Broken pipe)
+[  56.449][d][ipc_15] Destroying client handle...
+[  56.450][d][cplayer] Run command: seek, flags=64, args=[target="12.769000", flags="absolute", legacy="unused"]
+[  56.450][e][ipc_16] Write error (Broken pipe)
+[  56.450][d][ipc_16] Destroying client handle...
+[  56.450][v][cplayer] Set property: pause=false -> 1
+[  56.450][e][ipc_17] Write error (Broken pipe)
+[  56.450][d][ipc_17] Destroying client handle...
+[  56.451][v][ipc_18] Client connected
+[  56.451][d][cplayer] Run command: seek, flags=64, args=[target="3.058000", flags="absolute", legacy="unused"]
+[  56.451][e][ipc_18] Write error (Broken pipe)
+[  56.451][d][ipc_18] Destroying client handle...
+[  56.451][v][ipc_19] Client connected
+[  56.451][v][ipc_20] Client connected
+[  56.451][d][cplayer] Run command: seek, flags=64, args=[target="3.058000", flags="absolute", legacy="unused"]
+[  56.451][e][ipc_19] Write error (Broken pipe)
+[  56.451][d][ipc_19] Destroying client handle...
+[  56.452][v][cplayer] Set property: pause=false -> 1
+[  56.452][e][ipc_20] Write error (Broken pipe)
+[  56.452][d][ipc_20] Destroying client handle...
+[  56.452][v][ipc_21] Client connected
+[  56.452][v][ipc_22] Client connected
+[  56.453][v][ipc_23] Client connected
+[  56.453][d][cplayer] Run command: seek, flags=64, args=[target="12.772000", flags="absolute", legacy="unused"]
+[  56.453][e][ipc_21] Write error (Broken pipe)
+[  56.453][d][ipc_21] Destroying client handle...
+[  56.453][v][cplayer] Set property: pause=false -> 1
+[  56.453][e][ipc_22] Write error (Broken pipe)
+[  56.453][d][ipc_22] Destroying client handle...
+[  56.453][v][cplayer] Set property: volume=100.000000 -> 1
+[  56.453][e][ipc_23] Write error (Broken pipe)
+[  56.453][d][ipc_23] Destroying client handle...
+[  56.454][v][ipc_24] Client connected
+[  56.454][v][ipc_25] Client connected
+[  56.454][d][cplayer] Run command: seek, flags=64, args=[target="12.711000", flags="absolute", legacy="unused"]
+[  56.454][e][ipc_24] Write error (Broken pipe)
+[  56.454][d][ipc_24] Destroying client handle...
+[  56.454][v][cplayer] Set property: pause=false -> 1
+[  56.455][e][ipc_25] Write error (Broken pipe)
+[  56.455][d][ipc_25] Destroying client handle...
+[  56.455][v][ipc_26] Client connected
+[  56.455][d][cplayer] Run command: seek, flags=64, args=[target="9.518000", flags="absolute", legacy="unused"]
+[  56.455][e][ipc_26] Write error (Broken pipe)
+[  56.455][d][ipc_26] Destroying client handle...
+[  56.455][v][ipc_27] Client connected
+[  56.455][v][ipc_28] Client connected
+[  56.455][d][cplayer] Run command: seek, flags=64, args=[target="9.518000", flags="absolute", legacy="unused"]
+[  56.455][e][ipc_27] Write error (Broken pipe)
+[  56.455][d][ipc_27] Destroying client handle...
+[  56.455][v][cplayer] Set property: pause=false -> 1
+[  56.455][e][ipc_28] Write error (Broken pipe)
+[  56.455][d][ipc_28] Destroying client handle...
+[  56.472][v][ipc_29] Client connected
+[  56.472][v][ipc_30] Client connected
+[  56.473][d][cplayer] Run command: seek, flags=64, args=[target="12.723000", flags="absolute", legacy="unused"]
+[  56.473][e][ipc_29] Write error (Broken pipe)
+[  56.473][d][ipc_29] Destroying client handle...
+[  56.473][v][cplayer] Set property: pause=false -> 1
+[  56.473][e][ipc_30] Write error (Broken pipe)
+[  56.473][d][ipc_30] Destroying client handle...
+[  56.549][v][ipc_31] Client connected
+[  56.549][v][ipc_32] Client connected
+[  56.549][v][ipc_33] Client connected
+[  56.549][d][cplayer] Run command: seek, flags=64, args=[target="16.060000", flags="absolute", legacy="unused"]
+[  56.549][d][cplayer] Run command: seek, flags=64, args=[target="16.060000", flags="absolute", legacy="unused"]
+[  56.549][e][ipc_31] Write error (Broken pipe)
+[  56.549][e][ipc_32] Write error (Broken pipe)
+[  56.549][d][ipc_31] Destroying client handle...
+[  56.549][d][ipc_32] Destroying client handle...
+[  56.549][v][cplayer] Set property: pause=false -> 1
+[  56.549][e][ipc_33] Write error (Broken pipe)
+[  56.549][d][ipc_33] Destroying client handle...
+[  64.564][v][ipc_34] Client connected
+[  64.564][v][ipc_35] Client connected
+[  64.564][d][cplayer] Run command: seek, flags=64, args=[target="20.815000", flags="absolute", legacy="unused"]
+[  64.564][e][ipc_34] Write error (Broken pipe)
+[  64.565][v][cplayer] Set property: pause=false -> 1
+[  64.565][d][ipc_34] Destroying client handle...
+[  64.565][e][ipc_35] Write error (Broken pipe)
+[  64.565][d][ipc_35] Destroying client handle...
+[  65.826][v][clipboard/wayland] Read 1 bytes from the data offer fd
+[  68.386][v][clipboard/wayland] Read 1 bytes from the data offer fd
+[  72.526][v][ipc_36] Client connected
+[  72.527][v][ipc_37] Client connected
+[  72.527][d][cplayer] Run command: seek, flags=64, args=[target="28.778000", flags="absolute", legacy="unused"]
+[  72.527][e][ipc_36] Write error (Broken pipe)
+[  72.527][d][ipc_36] Destroying client handle...
+[  72.527][v][cplayer] Set property: pause=false -> 1
+[  72.527][e][ipc_37] Write error (Broken pipe)
+[  72.527][d][ipc_37] Destroying client handle...
+[  80.539][v][ipc_38] Client connected
+[  80.539][v][ipc_39] Client connected
+[  80.539][v][cplayer] Set property: pause=false -> 1
+[  80.539][e][ipc_39] Write error (Broken pipe)
+[  80.539][d][ipc_39] Destroying client handle...
+[  80.539][d][cplayer] Run command: seek, flags=64, args=[target="36.789000", flags="absolute", legacy="unused"]
+[  80.539][e][ipc_38] Write error (Broken pipe)
+[  80.539][d][ipc_38] Destroying client handle...
+[  88.527][v][ipc_40] Client connected
+[  88.528][v][ipc_41] Client connected
+[  88.528][d][cplayer] Run command: seek, flags=64, args=[target="44.776000", flags="absolute", legacy="unused"]
+[  88.529][e][ipc_40] Write error (Broken pipe)
+[  88.529][d][ipc_40] Destroying client handle...
+[  88.529][v][cplayer] Set property: pause=false -> 1
+[  88.529][e][ipc_41] Write error (Broken pipe)
+[  88.529][d][ipc_41] Destroying client handle...
+[  96.513][v][ipc_42] Client connected
+[  96.513][v][ipc_43] Client connected
+[  96.513][d][cplayer] Run command: seek, flags=64, args=[target="52.768000", flags="absolute", legacy="unused"]
+[  96.513][e][ipc_42] Write error (Broken pipe)
+[  96.514][d][ipc_42] Destroying client handle...
+[  96.514][v][cplayer] Set property: pause=false -> 1
+[  96.514][e][ipc_43] Write error (Broken pipe)
+[  96.514][d][ipc_43] Destroying client handle...
+[  97.176][v][ipc_44] Client connected
+[  97.176][v][cplayer] Set property: pause=true -> 1
+[  97.176][e][ipc_44] Write error (Broken pipe)
+[  97.176][d][ipc_44] Destroying client handle...
+[ 102.300][v][clipboard/wayland] Read 1002 bytes from the data offer fd

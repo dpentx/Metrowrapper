@@ -14,6 +14,8 @@
       name = "nix-develop-shell";
 
       packages = [
+        pkgs.openssl
+        pkgs.curl
         (pkgs.python3.withPackages (ps: with ps; [
          websockets
          protobuf
@@ -28,6 +30,7 @@
       ];
 
       shellHook = ''
+        export LD_LIBRARY_PATH=${pkgs.openssl}/lib:$LD_LIBRARY_PATH
         echo "nix develop shell aktif"
       '';
     };

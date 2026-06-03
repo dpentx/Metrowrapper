@@ -235,7 +235,8 @@ class MpvBridge:
         args = [
             mpv_bin, "--idle=yes", "--no-terminal", "--no-video",
             f"--input-ipc-server={self._ipc}",
-            "--ytdl=no",
+            "--ao=pulse",
+            "--ytdl-format=bestaudio/best",
             f"--log-file={os.path.join(os.path.dirname(os.path.abspath(__file__)), 'mpv.log')}",
         ]
         try:
@@ -319,7 +320,9 @@ class MpvBridge:
             k32.CloseHandle(h)
 
     def load(self, track_id: str, stream_url: str = ""):
-        url = stream_url if stream_url else f"https://music.youtube.com/watch?v={track_id}"
+        # ytdl:// protokolü ile YouTube Music akışını yükle
+        # mpv'nin built-in yt-dlp desteğini kullan
+        url = f"ytdl://https://music.youtube.com/watch?v={track_id}"
         self._cmd(["loadfile", url, "replace"])
 
     def play(self, pos_ms: Optional[int] = None):
@@ -577,10 +580,10 @@ class MetroClient:
             position_ts=time.monotonic() if play else 0,
         )
 
-        stream_url = await self._get_stream_url(proto_track.id)
-        self.mpv.load(proto_track.id, stream_url)
+        # ytdl:// protokolü ile yükle - yt-dlp'yi mpv otomatik çalıştıracak
+        self.mpv.load(proto_track.id, "")
 
-        await asyncio.sleep(1.0)
+        await asyncio.sleep(1.5)  # Stream buffering için bekle
         if pos_ms > 0:
             self.mpv.seek(pos_ms)
         if play:
@@ -593,35 +596,6 @@ class MetroClient:
                 pb.BufferReadyPayload(track_id=proto_track.id),
             ))
         except: pass
-
-    async def _get_stream_url(self, video_id: str) -> str:
-        ytdlp = MpvBridge._find_ytdlp()
-        if not ytdlp:
-            state.add_log("yt-dlp bulunamadi, direkt URL deneniyor", "warn")
-            return ""
-        yt_url = f"https://music.youtube.com/watch?v={video_id}"
-        try:
-            proc = await asyncio.create_subprocess_exec(
-                ytdlp, "-f", "bestaudio/best", "-g", "--no-playlist", yt_url,
-                stdout=asyncio.subprocess.PIPE,
-                stderr=asyncio.subprocess.PIPE,
-            )
-            stdout, stderr = await asyncio.wait_for(proc.communicate(), timeout=15)
-            lines = stdout.decode(errors="replace").strip().splitlines()
-            url = lines[0] if lines else ""
-            if url:
-                state.add_log(f"Stream URL alindi")
-                return url
-            else:
-                err = stderr.decode(errors="replace")[:200]
-                state.add_log(f"yt-dlp hata: {err}", "error")
-                return ""
-        except asyncio.TimeoutError:
-            state.add_log("yt-dlp timeout (15s)", "error")
-            return ""
-        except Exception as e:
-            state.add_log(f"yt-dlp exception: {e}", "error")
-            return ""
 
 
 def _live_pos(position_ms: int, last_update_ms: int, is_playing: bool) -> int:
